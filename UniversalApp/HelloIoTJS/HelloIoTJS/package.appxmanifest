@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="b6a36bcc-9bb7-4b88-8c4f-72d9b25318b6"
+    Version="1.0.0.0"
+    Publisher="CN=camie" />
+
+  <mp:PhoneIdentity PhoneProductId="b6a36bcc-9bb7-4b88-8c4f-72d9b25318b6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+
+  <Properties>
+    <DisplayName>HelloIoTJS</DisplayName>
+    <PublisherDisplayName>camie</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application 
+      Id="App"
+      StartPage="index.html">
+
+      <uap:VisualElements
+        DisplayName="HelloIoTJS"
+        Description="HelloIoTJS"
+        BackgroundColor="transparent"
+        Square150x150Logo="images\Square150x150Logo.png"
+        Square44x44Logo="images\Square44x44Logo.png">
+
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="images\splashscreen.png" />
+
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>

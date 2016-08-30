@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="HelloIoT.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloIoT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="HelloText" FontSize="72" Margin="0,463,0,207" Grid.Column="1">Hello World</TextBlock>
+        <Button x:Name="ClickButton" Click="ClickButton_Click" Content="Click!" HorizontalAlignment="Stretch" Margin="110,582,105,0" VerticalAlignment="Top" Height="32" Grid.Column="1"/>
+    </Grid>
+</Page>
